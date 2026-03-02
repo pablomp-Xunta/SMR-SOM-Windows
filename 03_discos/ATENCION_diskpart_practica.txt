@@ -1,0 +1,16 @@
+@echo off
+REM 03_discos\diskpart_practica.txt (se usa con diskpart /s)
+REM Objetivo: crear y formatear una partición en un disco (PELIGROSO si eliges mal).
+REM RECOMENDACIÓN: usar VHD (GUI) o revisar bien el número de disco antes de ejecutar.
+
+REM Para usar:
+REM   diskpart /s diskpart_practica.txt
+
+REM !!! NO EJECUTAR SIN REVISAR !!!
+REM list disk
+REM select disk X
+REM clean
+REM convert gpt
+REM create partition primary
+REM format fs=ntfs quick label=DATOS_SMR
+REM assign
